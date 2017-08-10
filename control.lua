@@ -261,6 +261,9 @@ end
 script.on_event("key-point-and-craft", function(event)
   local player = game.players[event.player_index]
   local entity = player.selected
+  if not entity then
+     return;
+  end
   if player.cursor_stack and player.cursor_stack.valid and player.cursor_stack.valid_for_read then
      --log( "Have a stack in hand?".. player.cursor_stack.name );
     player.print( { "must-be-empty" } );
@@ -270,7 +273,7 @@ script.on_event("key-point-and-craft", function(event)
     player.print( { "must-be-built" } );
     return;
   end
-  --log( "craft a thing?".. entity.name );
+  log( "craft a thing?".. entity.name );
   if entity then
 	local recipe = findRecipe( entity.name, 1, player );
 	if recipe then
@@ -283,6 +286,9 @@ end)
 script.on_event("key-point-and-craft-5", function(event)
   local player = game.players[event.player_index]
   local entity = player.selected
+  if not entity then
+     return;
+  end
   if player.cursor_stack and player.cursor_stack.valid and player.cursor_stack.valid_for_read then
      --log( "Have a stack in hand?".. player.cursor_stack.name );     
     player.print( { "must-be-empty" } );
