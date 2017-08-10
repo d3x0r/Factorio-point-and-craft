@@ -1,6 +1,6 @@
 {
     "name": "point-and-craft",
-    "version": "0.1.04",
+    "version": "0.1.05",
     "title": "Point and Craft",
     "author": "d3x0r",
     "description": "Hand-craft item selected under mouse.",
