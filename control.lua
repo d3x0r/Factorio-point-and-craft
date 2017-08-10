@@ -273,7 +273,7 @@ script.on_event("key-point-and-craft", function(event)
     player.print( { "must-be-built" } );
     return;
   end
-  log( "craft a thing?".. entity.name );
+  --log( "craft a thing?".. entity.name );
   if entity then
 	local recipe = findRecipe( entity.name, 1, player );
 	if recipe then
@@ -301,7 +301,7 @@ script.on_event("key-point-and-craft-5", function(event)
   if entity then
 	local recipe = findRecipe( entity.name, 5, player );
         if recipe then
-		log( "craft... 5x".. recipe );
+		--log( "craft... 5x".. recipe );
 		player.begin_crafting{ count=5, recipe=recipe, silent=false };
 	end
   end
