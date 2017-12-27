@@ -1,10 +1,10 @@
 {
     "name": "point-and-craft",
-    "version": "0.1.05",
+    "version": "0.1.51",
     "title": "Point and Craft",
     "author": "d3x0r",
     "description": "Hand-craft item selected under mouse.",
     "homepage": "https://forums.factorio.com/viewtopic.php?f=92&t=51717",
-    "factorio_version": "0.15",
+    "factorio_version": "0.16",
      "dependencies": ["base >= 0.15.31"]
 }
