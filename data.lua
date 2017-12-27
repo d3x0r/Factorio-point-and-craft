@@ -9,7 +9,7 @@ data:extend({
   {
     type = "custom-input",
     name = "key-point-and-craft-5",
-    key_sequence = "SHIFT + mouse-button-2",
+    key_sequence = "ALT + mouse-button-2",
     consuming = "script-only"
   }
 })
